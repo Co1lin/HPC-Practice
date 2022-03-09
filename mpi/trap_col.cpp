@@ -34,7 +34,6 @@ int main(int argc, char* argv[]) {
 
     auto start_t = chrono::high_resolution_clock::now();
     MPI::COMM_WORLD.Barrier();
-    // cout << "Process " << rank << " out of " << size << " starts to run!" << endl;
     if (rank == 0) {
         start_t = chrono::high_resolution_clock::now();
     }
@@ -47,23 +46,10 @@ int main(int argc, char* argv[]) {
         local_a, local_b, local_n, w
     );
 
-    // cout << "Process " << rank << " completed computation!" << endl;
+    // MPI reduce
+    MPI::COMM_WORLD.Reduce(&local_integral, &total_integral, 1, MPI::DOUBLE, MPI::SUM, 0);
 
-    // naively reduce (sum one by one)
-    if (rank != 0) {
-        // cout << "Process " << rank << " starts to send!" << endl;
-        MPI_Send(&local_integral, 1, MPI::DOUBLE, 0, 0, MPI::COMM_WORLD);
-        // cout << "Process " << rank << " completed sending!" << endl;
-    }
-    else {
-        // cout << "Process " << rank << " starts to receive!" << endl;
-        total_integral += local_integral;
-        for (int src_id = 1; src_id < size; src_id++) {
-            double tmp_integral;
-            MPI::COMM_WORLD.Recv(&tmp_integral, 1, MPI::DOUBLE, src_id, 0);
-            total_integral += tmp_integral;
-        }
-
+    if (rank == 0) {
         const auto end_t = chrono::high_resolution_clock::now();
         const auto duration = chrono::duration_cast<chrono::microseconds>(end_t - start_t).count();
 

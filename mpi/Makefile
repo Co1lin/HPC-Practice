@@ -2,7 +2,7 @@ CXXFLAGS := -O3
 
 .PHONY: clean
 
-all: mpi_sync mpi_async
+all: trap_p2p trap_col
 
 trap_p2p: trap_p2p.cpp
 	mpicxx $^ ${CXXFLAGS} -o $@
