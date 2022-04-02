@@ -1,0 +1,66 @@
+omp default thread num: 28
+---- Arr size in MB: 128
+  Rand filling... 134217728
+  Rand filling2... 134217728
+  Warming up...
+  Go go go!
+---- Time: 7395 us  Rate: 17309 MB/s
+---- Arr size in MB: 256
+  Rand filling... 268435456
+  Rand filling2... 268435456
+  Warming up...
+  Go go go!
+---- Time: 10649 us  Rate: 24039.8 MB/s
+---- Arr size in MB: 512
+  Rand filling... 536870912
+  Rand filling2... 536870912
+  Warming up...
+  Go go go!
+---- Time: 23252 us  Rate: 22019.6 MB/s
+---- Arr size in MB: 1024
+  Rand filling... 1073741824
+  Rand filling2... 1073741824
+  Warming up...
+  Go go go!
+---- Time: 51753 us  Rate: 19786.3 MB/s
+---- Arr size in MB: 2048
+  Rand filling... 2147483648
+  Rand filling2... 2147483648
+  Warming up...
+  Go go go!
+---- Time: 102861 us  Rate: 19910.4 MB/s
+---- Arr size in MB: 4096
+  Rand filling... 4294967296
+  Rand filling2... 4294967296
+  Warming up...
+  Go go go!
+---- Time: 172963 us  Rate: 23681.4 MB/s
+---- Arr size in MB: 8192
+  Rand filling... 8589934592
+  Rand filling2... 8589934592
+  Warming up...
+  Go go go!
+---- Time: 420115 us  Rate: 19499.4 MB/s
+---- Arr size in MB: 16384
+  Rand filling... 17179869184
+  Rand filling2... 17179869184
+  Warming up...
+  Go go go!
+---- Time: 748954 us  Rate: 21875.8 MB/s
+---- Arr size in MB: 32768
+  Rand filling... 34359738368
+  Rand filling2... 34359738368
+  Warming up...
+  Go go go!
+---- Time: 1621406 us  Rate: 20209.6 MB/s
+**** Mem Test Result ****
+size / MB	rate / MBps
+128	17309
+256	24039.8
+512	22019.6
+1024	19786.3
+2048	19910.4
+4096	23681.4
+8192	19499.4
+16384	21875.8
+32768	20209.6

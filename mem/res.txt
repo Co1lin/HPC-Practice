@@ -1,0 +1,63 @@
+omp default thread num: 28
+---- Arr size in MB: 1
+  Rand filling...1048576
+  Warming up...
+  Go go go!
+---- Time: 721 us  Rate: 1386.96 MB/s
+---- Arr size in MB: 2
+  Rand filling...2097152
+  Warming up...
+  Go go go!
+---- Time: 1277 us  Rate: 1566.17 MB/s
+---- Arr size in MB: 4
+  Rand filling...4194304
+  Warming up...
+  Go go go!
+---- Time: 1126 us  Rate: 3552.4 MB/s
+---- Arr size in MB: 8
+  Rand filling...8388608
+  Warming up...
+  Go go go!
+---- Time: 2298 us  Rate: 3481.29 MB/s
+---- Arr size in MB: 16
+  Rand filling...16777216
+  Warming up...
+  Go go go!
+---- Time: 4729 us  Rate: 3383.38 MB/s
+---- Arr size in MB: 32
+  Rand filling...33554432
+  Warming up...
+  Go go go!
+---- Time: 9244 us  Rate: 3461.7 MB/s
+---- Arr size in MB: 64
+  Rand filling...67108864
+  Warming up...
+  Go go go!
+---- Time: 18450 us  Rate: 3468.83 MB/s
+---- Arr size in MB: 128
+  Rand filling...134217728
+  Warming up...
+  Go go go!
+---- Time: 37497 us  Rate: 3413.61 MB/s
+---- Arr size in MB: 256
+  Rand filling...268435456
+  Warming up...
+  Go go go!
+---- Time: 76727 us  Rate: 3336.5 MB/s
+---- Arr size in MB: 512
+  Rand filling...536870912
+  Warming up...
+  Go go go!
+---- Time: 151666 us  Rate: 3375.84 MB/s
+---- Arr size in MB: 1024
+  Rand filling...1073741824
+  Warming up...
+  Go go go!
+---- Time: 302844 us  Rate: 3381.28 MB/s
+---- Arr size in MB: 2048
+  Rand filling...2147483648
+  Warming up...
+  Go go go!
+---- Time: 600777 us  Rate: 3408.92 MB/s
+---- Arr size in MB: 4096
+  Rand filling...4294967296
